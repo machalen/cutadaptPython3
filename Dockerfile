@@ -24,7 +24,7 @@ RUN make
 RUN make install
 
 #Symbolic link to call python3
-RUN ln -s /opt/python3.3/bin/python3.3 python
+RUN ln -s /opt/python3.3/bin/python3.3 pythonv3
 
 # Cleanup 
 RUN rm -rf /usr/local/Python-3.3.5.tar.xz
