@@ -12,7 +12,7 @@ MAINTAINER Magdalena Arnal, marnal@imim.es
 #Update the repository sources list and install essential libraries
 RUN apt-get update && apt-get install --yes build-essential python3-dev
 RUN apt-get update && apt-get install --yes wget libsqlite3-dev sqlite3 bzip2 libbz2-dev pigz
-#RUN apt-get install libreadline-dev libncurses5-dev libssl1.0.0 tk8.5-dev zlib1g-dev liblzma-dev
+RUN apt-get install g++ zlib1g-dev ncurses-dev liblzma-dev libncurses5-dev default-jre default-jdk
 
 #Install python 3.3.5
 WORKDIR /usr/local/
